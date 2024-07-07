@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+confluent_kafka
+fastapi_socketio
+python-socketio
+asyncio
