@@ -39,3 +39,9 @@ def publish_message_continuously():
 @app.on_event("startup")
 def start_background_task():
     threading.Thread(target=publish_message_continuously, daemon=True).start()
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=8003)
